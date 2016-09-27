@@ -41,6 +41,5 @@
     "power-assert": "^1.4.1",
     "textlint-tester": "^2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
