@@ -9,8 +9,16 @@ const getFunctionName = (code) => {
     const [all, name] = code.match(functionWithParenthesisRegExp);
     return name;
 };
-module.exports = function(context) {
+
+const defaultOptions = {
+    /**
+     * A collection of allowed function name
+     */
+    allow: []
+};
+module.exports = function(context, options) {
     const {Syntax, RuleError, report, getSource} = context;
+    const allow = options.allow || defaultOptions.allow;
     return {
         [Syntax.Code](node){
             const code = node.value || getSource(node);
@@ -18,6 +26,9 @@ module.exports = function(context) {
                 return;
             }
             const name = getFunctionName(code);
+            if (allow.indexOf(name) !== -1) {
+                return;
+            }
             report(node, new RuleError(`\`${code}\` should be written \`${name}\`.`));
         }
     }

@@ -12,7 +12,21 @@ tester.run("no-js-function-paren", noFunctionParen, {
         "`fn` function",
         "`fn` method",
         "`fn(name);`", // example like code is ok1
-        "`var x = fn();" // example like code is ok1
+        "`var x = fn();", // example like code is ok1
+        // allow
+        {
+            text: "`Symbol()`",
+            options: {
+                allow: ["Symbol"]
+            }
+        },
+        // allow method
+        {
+            text: "`fn.method()`",
+            options: {
+                allow: ["fn.method"]
+            }
+        }
     ],
     invalid: [
         {
