@@ -27,6 +27,23 @@ textlint --rule preset-js-function README.md
 ```
 
 
+## Options
+
+- `allow`: `string[]`
+    - A collection of allow function/method name
+
+Allow to use `Symbol()`
+
+```json
+{
+    "rules": {
+        "preset-js-function": {
+            "allow": ["Symbol"]
+        }
+    }
+}
+```
+
 ## Changelog
 
 See [Releases page](https://github.com/azu/textlint-rule-preset-js-function/releases).
