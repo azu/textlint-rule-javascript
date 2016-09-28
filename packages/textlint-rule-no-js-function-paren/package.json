@@ -12,7 +12,7 @@
   "name": "textlint-rule-no-js-function-paren",
   "version": "1.0.0",
   "description": "textlint rule preset for JavaScript function notation.",
-  "main": "lib/index.js",
+  "main": "lib/no-js-function-paren.js",
   "scripts": {
     "test": "mocha test/",
     "build": "NODE_ENV=production babel src --out-dir lib --source-maps",
