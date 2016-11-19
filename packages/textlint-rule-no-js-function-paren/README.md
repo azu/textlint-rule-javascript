@@ -1,6 +1,18 @@
 # textlint-rule-no-js-function-paren
 
-textlint rule preset for JavaScript function notation.
+Not to use `fn()` style in inline `Code`.
+
+OK:
+
+    `fn` function
+    `object#method`メソッド
+
+NG:
+
+    `fn()`
+    `object#method()`
+    `object.method()`
+
 
 ## Install
 

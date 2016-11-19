@@ -49,6 +49,16 @@ tester.run("no-js-function-paren", noFunctionParen, {
                 }
             ]
         },
+        {
+            text: "`obj#method()` is bad",
+            errors: [
+                {
+                    message: "`obj#method()` should be written `obj#method`.",
+                    line: 1,
+                    column: 1
+                }
+            ]
+        },
         // multiple match in multiple lines
         {
             text: "`fn()`\n\nThis is `obj.method()`",
