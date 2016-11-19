@@ -1,16 +1,8 @@
 # textlint-rule-javascript
 
+## [textlint-rule-no-js-function-paren](packages/textlint-rule-no-js-function-paren)
 
-
-## Install
-
-Install with [npm](https://www.npmjs.com/):
-
-    npm install textlint-rule-javascript
-
-## Usage
-
-- [ ] Write usage instructions
+`fn()` vs. `fn` function style.
 
 ## Changelog
 
