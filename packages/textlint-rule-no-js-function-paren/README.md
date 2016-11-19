@@ -1,4 +1,4 @@
-# textlint-rule-preset-js-function
+# textlint-rule-no-js-function-paren
 
 textlint rule preset for JavaScript function notation.
 
@@ -6,7 +6,7 @@ textlint rule preset for JavaScript function notation.
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-rule-preset-js-function
+    npm install textlint-rule-no-js-function-paren
 
 ## Usage
 
@@ -15,7 +15,7 @@ Via `.textlintrc`(Recommended)
 ```json
 {
     "rules": {
-        "preset-js-function": true
+        "no-js-function-paren": true
     }
 }
 ```
@@ -23,7 +23,7 @@ Via `.textlintrc`(Recommended)
 Via CLI
 
 ```
-textlint --rule preset-js-function README.md
+textlint --rule no-js-function-paren README.md
 ```
 
 
@@ -37,7 +37,7 @@ Allow to use `Symbol()`
 ```json
 {
     "rules": {
-        "preset-js-function": {
+        "no-js-function-paren": {
             "allow": ["Symbol"]
         }
     }
@@ -46,7 +46,7 @@ Allow to use `Symbol()`
 
 ## Changelog
 
-See [Releases page](https://github.com/azu/textlint-rule-preset-js-function/releases).
+See [Releases page](https://github.com/azu/textlint-rule-no-js-function-paren/releases).
 
 ## Running tests
 
@@ -58,7 +58,7 @@ Install devDependencies and Run `npm test`:
 
 Pull requests and stars are always welcome.
 
-For bugs and feature requests, [please create an issue](https://github.com/azu/textlint-rule-preset-js-function/issues).
+For bugs and feature requests, [please create an issue](https://github.com/azu/textlint-rule-no-js-function-paren/issues).
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
